@@ -1,0 +1,49 @@
+#carouselExample{
+    margin-bottom: 50px;
+}
+.row{
+   padding-left: 20px;
+   padding-right: 20px;
+   margin-bottom: 40px;
+}
+.card-footer{
+    text-align: center;
+}
+.col{
+    display: block;
+    margin-top: 100px;
+}
+@keyframes flickerAnimation {
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-o-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-moz-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-webkit-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  .animate-flicker {
+     -webkit-animation: flickerAnimation 3s infinite;
+     -moz-animation: flickerAnimation 3s infinite;
+     -o-animation: flickerAnimation 3s infinite;
+      animation: flickerAnimation 3s infinite;
+      color: #720455;
+  }
+  .card-holder :hover {  
+    transform: translateY(-10px);
+    transition: 0.2s;
+}
+.spaces{
+    margin-bottom: 30px;
+}
